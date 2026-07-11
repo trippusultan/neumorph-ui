@@ -62,6 +62,47 @@
     });
   });
 
+  // Checkboxes
+  document.querySelectorAll('.check-row, .check').forEach(c => {
+    c.addEventListener('click', e => {
+      e.stopPropagation();
+      (c.classList.contains('check') ? c : c.querySelector('.check')).classList.toggle('on');
+    });
+  });
+
+  // Radios (single-select within a group)
+  document.querySelectorAll('.radio-row').forEach(r => {
+    r.addEventListener('click', () => {
+      const group = r.parentElement.querySelectorAll('.radio-row');
+      group.forEach(x => x.querySelector('.radio').classList.remove('on'));
+      r.querySelector('.radio').classList.add('on');
+    });
+  });
+
+  // Segmented controls (single-select within a control)
+  document.querySelectorAll('.segmented').forEach(seg => {
+    seg.addEventListener('click', e => {
+      if (e.target.tagName !== 'BUTTON') return;
+      seg.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+    });
+  });
+
+  // Star rating
+  document.querySelectorAll('.stars').forEach(st => {
+    const stars = [...st.children];
+    st.addEventListener('click', e => {
+      const idx = stars.indexOf(e.target);
+      if (idx < 0) return;
+      stars.forEach((s, i) => s.classList.toggle('on', i <= idx));
+    });
+  });
+
+  // Accordion (free version)
+  document.querySelectorAll('.acc-free .acc-item').forEach(it => {
+    it.addEventListener('click', () => it.classList.toggle('open'));
+  });
+
   // UPI intent deep-link
   const upiId = 'trippusultan@razorpay';
   const upiBtn = document.getElementById('upi-pay');

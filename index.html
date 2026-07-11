@@ -17,6 +17,7 @@
     <div class="brand"><span class="dot">N</span> Neumorph<span style="color:var(--accent)">UI</span></div>
     <nav class="nav-links">
       <a href="#showcase">Components</a>
+      <a href="#library">Library</a>
       <a href="#playground">Playground</a>
       <a href="#pricing">Pricing</a>
       <a href="https://github.com/trippusultan/neumorph-ui" target="_blank" rel="noreferrer">GitHub</a>
@@ -52,21 +53,80 @@
           <button class="btn btn--sm">Secondary</button>
         </div>
         <div class="row"><span class="chip active">All</span><span class="chip">Design</span><span class="chip">Code</span></div>
-        <div class="toggle on"></div>
+        <div class="row" style="justify-content:space-between">
+          <div class="toggle on"></div>
+          <span class="stars" title="rate"><span class="on">★</span><span class="on">★</span><span class="on">★</span><span>★</span><span>★</span></span>
+        </div>
+        <div class="progress"><i style="width:72%"></i></div>
       </div>
       <div class="cell neu">
         <input class="field" placeholder="Type something…" />
-        <div class="row"><span class="avatar">A</span><span class="avatar">B</span><span class="avatar">C</span></div>
-        <div class="chip-group row"><span class="chip active">Day</span><span class="chip">Week</span><span class="chip">Month</span></div>
+        <div class="select" style="max-width:200px">
+          <select><option>India</option><option>US</option><option>UK</option></select>
+        </div>
+        <div class="row"><span class="avatar">A</span><span class="avatar">B</span><span class="avatar">C</span>
+          <span class="badge badge--gold">Pro</span><span class="badge badge--dot">Live</span></div>
+      </div>
+      <div class="cell neu">
+        <div class="check-row"><span class="check on"></span> Remember me</div>
+        <div class="radio-row"><span class="radio on"></span> Monthly</div>
+        <div class="radio-row"><span class="radio"></span> Yearly</div>
+        <div class="segmented"><button class="active">Day</button><button>Week</button><button>Month</button></div>
       </div>
       <div class="cell neu">
         <input type="range" class="slider" min="0" max="100" value="60" />
-        <div class="row" style="justify-content:center;gap:24px">
+        <div class="row" style="justify-content:center;gap:18px">
           <div class="stat"><div class="n">12k</div><div class="l">stars</div></div>
           <div class="stat"><div class="n">38</div><div class="l">comps</div></div>
           <div class="stat"><div class="n">0₹</div><div class="l">core</div></div>
         </div>
+        <div class="row" style="justify-content:center"><span class="tip" data-tip="Buttery!">⌖ tooltip</span></div>
       </div>
+      <div class="cell neu">
+        <div class="list-item"><span class="li-av">TS</span><div class="li-body"><b>Trippu Sultan</b><small>just purchased Pro</small></div><span class="li-trail">now</span></div>
+        <div class="list-item"><span class="li-av">KM</span><div class="li-body"><b>KharchaBae</b><small>new follower</small></div><span class="li-trail">2m</span></div>
+      </div>
+      <div class="cell neu">
+        <div class="notify"><span class="ic">✓</span><div><div class="t">Payment received</div><div class="d">₹499 via UPI · thank you!</div></div></div>
+        <div class="acc-free">
+          <div class="acc-item open"><div class="h">Is it really free? <span>+</span></div><div class="b">The core is MIT — use it anywhere. Pro is the paid pack.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FULL LIBRARY -->
+<section id="library" style="background:color-mix(in srgb,var(--surface) 24%,transparent)">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Every component in the free core</h2>
+      <p>40+ building blocks. Tap them — they're all live.</p>
+    </div>
+    <div class="library">
+      <div class="lib-cell neu"><div class="lab">Buttons</div><div class="row"><button class="btn btn--gold btn--sm">Gold</button><button class="btn btn--sm">Soft</button></div></div>
+      <div class="lib-cell neu"><div class="lab">Inputs</div><input class="field" placeholder="Email" /></div>
+      <div class="lib-cell neu"><div class="lab">Select</div><div class="select"><select><option>Daily</option><option>Weekly</option></select></div></div>
+      <div class="lib-cell neu"><div class="lab">Segmented</div><div class="segmented"><button class="active">A</button><button>B</button><button>C</button></div></div>
+      <div class="lib-cell neu"><div class="lab">Checkbox</div><div class="check-row"><span class="check on"></span> Agree</div></div>
+      <div class="lib-cell neu"><div class="lab">Radio</div><div class="radio-row"><span class="radio on"></span> Option 1</div></div>
+      <div class="lib-cell neu"><div class="lab">Toggle</div><div class="toggle on"></div></div>
+      <div class="lib-cell neu"><div class="lab">Slider</div><input type="range" class="slider" min="0" max="100" value="45" /></div>
+      <div class="lib-cell neu"><div class="lab">Rating</div><span class="stars"><span class="on">★</span><span class="on">★</span><span class="on">★</span><span class="on">★</span><span>★</span></span></div>
+      <div class="lib-cell neu"><div class="lab">Progress</div><div class="progress"><i style="width:64%"></i></div></div>
+      <div class="lib-cell neu"><div class="lab">Badges</div><div class="row"><span class="badge">New</span><span class="badge badge--gold">Pro</span><span class="badge badge--dot">On</span></div></div>
+      <div class="lib-cell neu"><div class="lab">Chips</div><div class="chip-group row"><span class="chip active">One</span><span class="chip">Two</span></div></div>
+      <div class="lib-cell neu"><div class="lab">Avatars</div><div class="avatar-group"><span class="avatar">A</span><span class="avatar">B</span><span class="avatar">C</span></div></div>
+      <div class="lib-cell neu"><div class="lab">Stats</div><div class="row" style="justify-content:center"><div class="stat"><div class="n">98%</div><div class="l">happy</div></div></div></div>
+      <div class="lib-cell neu"><div class="lab">List</div><div class="list-item"><span class="li-av">N</span><div class="li-body"><b>Neumorph</b><small>v1.0</small></div></div></div>
+      <div class="lib-cell neu"><div class="lab">Breadcrumb</div><div class="breadcrumb"><a>Home</a><span class="sep">/</span><a>UI</a><span class="sep">/</span><span class="cur">Kit</span></div></div>
+      <div class="lib-cell neu"><div class="lab">Pagination</div><div class="pager"><button>‹</button><button class="active">1</button><button>2</button><button>3</button><button>›</button></div></div>
+      <div class="lib-cell neu"><div class="lab">Notify</div><div class="notify"><span class="ic">★</span><div><div class="t">Saved</div><div class="d">Added to library</div></div></div></div>
+      <div class="lib-cell neu"><div class="lab">Tooltip</div><div class="row" style="justify-content:center"><span class="tip" data-tip="Hover worked!">⌖ hover me</span></div></div>
+      <div class="lib-cell neu"><div class="lab">Divider</div><div class="divider"></div></div>
+      <div class="lib-cell neu"><div class="lab">Skeleton</div><div class="skeleton" style="height:54px"></div></div>
+      <div class="lib-cell neu"><div class="lab">Accordion</div><div class="acc-free"><div class="acc-item"><div class="h">Click me <span>+</span></div><div class="b">Hidden content reveals on tap.</div></div></div></div>
+      <div class="lib-cell neu"><div class="lab">Empty</div><div class="empty">No items yet</div></div>
     </div>
   </div>
 </section>
@@ -111,6 +171,8 @@
         <input class="field" placeholder="Focus me…" style="max-width:260px" />
         <div class="toggle on"></div>
         <input type="range" class="slider" min="0" max="100" value="70" style="max-width:260px" />
+        <div class="segmented"><button class="active">Day</button><button>Week</button><button>Month</button></div>
+        <div class="progress" style="max-width:260px"><i style="width:80%"></i></div>
         <textarea id="code-out" class="field code-out" rows="6" readonly></textarea>
         <button class="btn btn--sm copy-btn" data-copy="code-out">Copy CSS</button>
       </div>
