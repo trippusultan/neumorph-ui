@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Neumorph UI — Premium dark neumorphic component kit (free + Pro)</title>
+<meta name="description" content="A gorgeous, accessible dark neumorphic UI kit in signature black + gold. Free MIT core, plus a Pro pack with extended components, React ports & templates. Pay via UPI." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;850&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="brand"><span class="dot">N</span> Neumorph<span style="color:var(--accent)">UI</span></div>
+    <nav class="nav-links">
+      <a href="#showcase">Components</a>
+      <a href="#playground">Playground</a>
+      <a href="#pricing">Pricing</a>
+      <a href="https://github.com/trippusultan/neumorph-ui" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+    <a class="btn btn--gold btn--sm" href="#pricing">Get Pro</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Free MIT core · Pro pack ₹499</span>
+    <h1>Soft, deep &amp; <span class="g">buttery</span> dark UI<br/>that actually feels premium.</h1>
+    <p>Neumorph UI is a complete neumorphic design system in signature black&nbsp;+&nbsp;gold. Grab the free MIT core, then upgrade to Pro for the full component set, React ports &amp; ready-made templates.</p>
+    <div class="hero-cta">
+      <a class="btn btn--gold" href="https://github.com/trippusultan/neumorph-ui/archive/refs/heads/main.zip">⬇ Download free core</a>
+      <a class="btn" href="#playground">Try the playground</a>
+    </div>
+  </div>
+</section>
+
+<!-- SHOWCASE -->
+<section id="showcase">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Built from real primitives</h2>
+      <p>Every component is one neumorphic shadow system — consistent, tactile, accessible.</p>
+    </div>
+    <div class="gallery">
+      <div class="cell neu">
+        <div class="row">
+          <button class="btn btn--gold btn--sm">Primary</button>
+          <button class="btn btn--sm">Secondary</button>
+        </div>
+        <div class="row"><span class="chip active">All</span><span class="chip">Design</span><span class="chip">Code</span></div>
+        <div class="toggle on"></div>
+      </div>
+      <div class="cell neu">
+        <input class="field" placeholder="Type something…" />
+        <div class="row"><span class="avatar">A</span><span class="avatar">B</span><span class="avatar">C</span></div>
+        <div class="chip-group row"><span class="chip active">Day</span><span class="chip">Week</span><span class="chip">Month</span></div>
+      </div>
+      <div class="cell neu">
+        <input type="range" class="slider" min="0" max="100" value="60" />
+        <div class="row" style="justify-content:center;gap:24px">
+          <div class="stat"><div class="n">12k</div><div class="l">stars</div></div>
+          <div class="stat"><div class="n">38</div><div class="l">comps</div></div>
+          <div class="stat"><div class="n">0₹</div><div class="l">core</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLAYGROUND -->
+<section id="playground" style="background:color-mix(in srgb,var(--surface) 30%,transparent)">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Live theme playground</h2>
+      <p>Tweak the system. Copy the CSS. Ship it in your own palette.</p>
+    </div>
+    <div class="playground">
+      <div class="controls neu">
+        <div class="ctrl">
+          <label>Background <span></span></label>
+          <input type="color" id="c-bg" value="#0E0E10" class="field" />
+        </div>
+        <div class="ctrl">
+          <label>Surface</label>
+          <input type="color" id="c-surface" value="#16161a" class="field" />
+        </div>
+        <div class="ctrl">
+          <label>Accent (gold)</label>
+          <input type="color" id="c-accent" value="#E8C547" class="field" />
+        </div>
+        <div class="ctrl">
+          <label>Radius <span id="v-radius">18px</span></label>
+          <input type="range" id="c-radius" class="slider" min="0" max="40" value="18" />
+        </div>
+        <div class="ctrl">
+          <label>Shadow distance <span id="v-dist">8px</span></label>
+          <input type="range" id="c-dist" class="slider" min="2" max="20" value="8" />
+        </div>
+        <div class="ctrl">
+          <label>Blur <span id="v-blur">18px</span></label>
+          <input type="range" id="c-blur" class="slider" min="4" max="40" value="18" />
+        </div>
+      </div>
+      <div class="preview neu">
+        <button class="btn btn--gold">Gold button</button>
+        <button class="btn">Soft button</button>
+        <input class="field" placeholder="Focus me…" style="max-width:260px" />
+        <div class="toggle on"></div>
+        <input type="range" class="slider" min="0" max="100" value="70" style="max-width:260px" />
+        <textarea id="code-out" class="field code-out" rows="6" readonly></textarea>
+        <button class="btn btn--sm copy-btn" data-copy="code-out">Copy CSS</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING / STORE -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Free to start. Pro to ship faster.</h2>
+      <p>Pay once, own it forever. No subscription. UPI, card or Ko-fi — your call.</p>
+    </div>
+    <div class="grid grid-2" style="align-items:start">
+      <!-- Free -->
+      <div class="price-card neu">
+        <h3 style="margin:0">Core</h3>
+        <div class="price">₹0 <small>/ forever · MIT</small></div>
+        <ul class="feat-list">
+          <li>14 base neumorphic components</li>
+          <li>Live theme playground (this page)</li>
+          <li>CSS variables, fully skinnable</li>
+          <li>Dark-only design system</li>
+          <li>GitHub Issues support</li>
+        </ul>
+        <a class="btn" href="https://github.com/trippusultan/neumorph-ui/archive/refs/heads/main.zip">Download free</a>
+      </div>
+      <!-- Pro -->
+      <div class="price-card neu featured">
+        <span class="tag">Most popular</span>
+        <h3 style="margin:0">Pro Pack</h3>
+        <div class="price">₹499 <small>/ one-time</small></div>
+        <ul class="feat-list">
+          <li>Everything in Core, plus:</li>
+          <li>38 components (charts, calendars, nav, modals)</li>
+          <li>React + Vue ports of every component</li>
+          <li>5 production templates (dashboard, SaaS, portfolio)</li>
+          <li>Light + dark themes + Figma source</li>
+          <li>Email support &amp; future updates</li>
+        </ul>
+        <a class="btn btn--gold" href="#pay">Buy Pro — ₹499</a>
+      </div>
+    </div>
+
+    <!-- PAY -->
+    <div id="pay" class="grid grid-2" style="margin-top:26px;align-items:start">
+      <div class="upi-box neu">
+        <h3 style="margin:0">Pay with UPI</h3>
+        <p style="margin:0;color:var(--text-dim);font-size:14px">Tap to open your UPI app. After paying, email your UTR + GitHub username to <span class="kbd">trippusultan@gmail.com</span> and I'll grant Pro access within 24h.</p>
+        <button class="btn btn--gold" id="upi-pay" data-amount="499">Pay ₹499 via UPI</button>
+        <p style="margin:0;color:var(--text-dim);font-size:12px">UPI ID: <span class="kbd">trippusultan@razorpay</span></p>
+      </div>
+      <div class="upi-box neu">
+        <h3 style="margin:0">Card / PayPal / Ko-fi</h3>
+        <p style="margin:0;color:var(--text-dim);font-size:14px">Don't use UPI? Grab Pro on Ko-fi with card or PayPal — instant download link.</p>
+        <a class="btn btn--gold" href="https://ko-fi.com/trippusultan" target="_blank" rel="noreferrer">Buy on Ko-fi</a>
+        <p style="margin:0;color:var(--text-dim);font-size:12px">Or scan the QR on the left with any UPI app.</p>
+        <div class="upi-qr">QR<br/>trippusultan@razorpay</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="brand"><span class="dot">N</span> NeumorphUI</div>
+    <div>© 2026 trippusultan · MIT licensed core · <a href="https://github.com/trippusultan/neumorph-ui" style="color:var(--accent)">GitHub</a></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

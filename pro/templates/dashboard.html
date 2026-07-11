@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Neumorph — Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;850&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../styles.css"/>
+<link rel="stylesheet" href="../pro/neumorph-pro.css"/>
+<style>body{padding:40px 0} .tpl-wrap{max-width:1080px;margin:0 auto;padding:0 24px}</style>
+</head><body><div class="tpl-wrap">
+<header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:28px">
+  <h1 style="margin:0;font-size:30px">Dashboard</h1>
+  <button class="btn btn--gold btn--sm">+ New</button>
+</header>
+<div class="grid grid-3" style="margin-bottom:24px">
+  <div class="stat neu"><div class="n">Rs.2.4L</div><div class="l">Revenue</div></div>
+  <div class="stat neu"><div class="n">1,920</div><div class="l">Users</div></div>
+  <div class="stat neu"><div class="n">98%</div><div class="l">Uptime</div></div>
+</div>
+<div class="grid grid-2">
+  <div class="neu card">
+    <h3>Weekly revenue</h3>
+    <div class="bar-chart">
+      <div class="bar" style="height:40%"></div><div class="bar" style="height:65%"></div>
+      <div class="bar" style="height:50%"></div><div class="bar" style="height:80%"></div>
+      <div class="bar" style="height:60%"></div><div class="bar" style="height:95%"></div>
+      <div class="bar" style="height:72%"></div>
+    </div>
+  </div>
+  <div class="neu card">
+    <h3>Progress</h3>
+    <div style="display:flex;gap:18px;align-items:center;margin-top:14px">
+      <div class="ring"><b>72%</b></div>
+      <div style="color:var(--text-dim);font-size:14px">Goal completion for this sprint. On track to ship Pro v2.</div>
+    </div>
+    <div class="stepper" style="margin-top:22px">
+      <div class="step done">1</div><div class="step-line"></div>
+      <div class="step done">2</div><div class="step-line"></div>
+      <div class="step">3</div><div class="step-line"></div><div class="step">4</div>
+    </div>
+  </div>
+</div></div></body></html>

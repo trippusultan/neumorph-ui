@@ -1,0 +1,77 @@
+/* ============================================================================
+   NEUMORPH UI — PRO PACK (extends free core styles.css)
+   Drop after styles.css. Same --bg/--surface/--accent variables apply.
+   ========================================================================== */
+
+/* Charts (pure CSS bars) */
+.bar-chart { display:flex; align-items:flex-end; gap:10px; height:160px; padding:18px;
+  background:var(--surface); border-radius:var(--radius); box-shadow:var(--elev-in); }
+.bar { flex:1; border-radius:8px 8px 4px 4px;
+  background:linear-gradient(180deg,var(--accent),color-mix(in srgb,var(--accent) 40%,var(--surface)));
+  box-shadow: var(--elev-out-sm); transition:height .4s ease; }
+
+/* Calendar */
+.cal { padding:18px; }
+.cal-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:8px; margin-top:12px; }
+.cal-cell { aspect-ratio:1; display:grid; place-items:center; font-size:13px; border-radius:10px;
+  background:var(--surface); box-shadow:var(--elev-out-sm); color:var(--text-dim); cursor:pointer; }
+.cal-cell.today { color:var(--accent); box-shadow:var(--elev-in-sm); font-weight:700; }
+
+/* Modal */
+.modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,.6); backdrop-filter:blur(4px);
+  display:grid; place-items:center; z-index:200; }
+.modal { width:min(440px,92vw); padding:28px; background:var(--surface); border-radius:var(--radius);
+  box-shadow:var(--elev-out), 0 0 50px -16px var(--accent); }
+
+/* Sidebar nav */
+.sidebar { padding:18px; display:flex; flex-direction:column; gap:8px; min-width:200px; }
+.nav-item { padding:11px 14px; border-radius:12px; color:var(--text-dim); cursor:pointer;
+  box-shadow:var(--elev-out-sm); font-size:14px; font-weight:600; transition:.18s; }
+.nav-item:hover { color:var(--text); }
+.nav-item.active { color:var(--accent); box-shadow:var(--elev-in-sm); }
+
+/* Stepper */
+.stepper { display:flex; align-items:center; gap:0; }
+.step { width:34px; height:34px; border-radius:50%; display:grid; place-items:center;
+  background:var(--surface); box-shadow:var(--elev-out-sm); font-weight:700; color:var(--text-dim); }
+.step.done { color:var(--accent); box-shadow:var(--elev-in-sm); }
+.step-line { flex:1; height:3px; background:var(--surface); box-shadow:var(--elev-in-sm); }
+
+/* Toast (pro) */
+.toast-pro { position:fixed; top:20px; right:20px; padding:14px 20px; border-radius:13px;
+  background:var(--surface); box-shadow:var(--elev-out),0 0 30px -10px var(--accent); z-index:300;
+  display:flex; gap:12px; align-items:center; font-size:14px; }
+.toast-pro .ic { color:var(--accent); font-weight:800; }
+
+/* Progress ring (SVG-friendly wrapper) */
+.ring { width:90px; height:90px; border-radius:50%; display:grid; place-items:center;
+  background:var(--surface); box-shadow:var(--elev-out); position:relative; }
+.ring::before { content:""; position:absolute; inset:10px; border-radius:50%; box-shadow:var(--elev-in); }
+.ring b { font-size:18px; color:var(--accent); position:relative; }
+
+/* Tooltip */
+.tip { position:relative; }
+.tip::after { content:attr(data-tip); position:absolute; bottom:calc(100% + 8px); left:50%;
+  transform:translateX(-50%); white-space:nowrap; font-size:12px; padding:6px 10px; border-radius:8px;
+  background:var(--surface); color:var(--text); box-shadow:var(--elev-out); opacity:0; pointer-events:none; transition:.2s; }
+.tip:hover::after { opacity:1; }
+
+/* Accordion */
+.acc { padding:0; overflow:hidden; }
+.acc-item { padding:16px 20px; box-shadow:var(--elev-out-sm); margin:10px; border-radius:12px; cursor:pointer; }
+.acc-item .h { font-weight:600; display:flex; justify-content:space-between; }
+.acc-item .b { color:var(--text-dim); font-size:14px; max-height:0; overflow:hidden; transition:.3s; }
+.acc-item.open .b { max-height:120px; margin-top:10px; }
+
+/* Tabs */
+.tabs { display:flex; gap:8px; padding:8px; background:var(--surface); border-radius:14px; box-shadow:var(--elev-in); }
+.tab { padding:9px 16px; border-radius:10px; font-size:14px; font-weight:600; color:var(--text-dim); cursor:pointer; }
+.tab.active { color:var(--accent); box-shadow:var(--elev-out-sm); }
+
+/* Badge */
+.badge { font-size:11px; font-weight:700; padding:4px 10px; border-radius:999px;
+  background:var(--surface); color:var(--accent); box-shadow:var(--elev-out-sm); }
+
+/* Switch row */
+.switch-row { display:flex; align-items:center; justify-content:space-between; padding:14px 18px;
+  background:var(--surface); border-radius:14px; box-shadow:var(--elev-out-sm); font-size:14px; }
