@@ -4,3 +4,4 @@ node_modules/
 .env
 dist/
 .next/
+pro/  # Paid product — NOT in public repo. Zip lives locally for Ko-fi/Drive.
